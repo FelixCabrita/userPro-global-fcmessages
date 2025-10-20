@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "Read(//c/xampp/htdocs/WP/PASIVOS/wp-content/uploads/userpro/1/conversations/archive/**)",
+      "Read(//c/xampp/htdocs/WP/PASIVOS/wp-content/uploads/userpro/2/conversations/archive/**)",
+      "Read(//c/xampp/htdocs/WP/PASIVOS/wp-content/uploads/userpro/2/conversations/unread/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

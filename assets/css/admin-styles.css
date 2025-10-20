@@ -1,0 +1,874 @@
+/**
+ * Estilos administrativos para UserPro Global Messages
+ */
+
+/* Contenedor principal */
+.upgm-wrap {
+    margin: 20px 20px 20px 0;
+}
+
+/* Filtros */
+.upgm-filters {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+.upgm-filters-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: flex-end;
+}
+
+.upgm-filter-item {
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+}
+
+.upgm-filter-item label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+.upgm-filter-item select,
+.upgm-filter-item input[type="text"],
+.upgm-filter-item input[type="date"] {
+    padding: 6px 10px;
+    border: 1px solid #8c8f94;
+    border-radius: 3px;
+    min-width: 150px;
+}
+
+.upgm-filter-item select {
+    min-width: 200px;
+}
+
+/* Acciones */
+.upgm-actions {
+    margin: 15px 0;
+    text-align: right;
+}
+
+.upgm-actions .button {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Tabla */
+.upgm-table {
+    margin-top: 20px;
+}
+
+.upgm-table th {
+    font-weight: 600;
+    background: #f6f7f7;
+}
+
+.upgm-user-ids {
+    color: #646970;
+    font-size: 12px;
+}
+
+.upgm-message-preview {
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #50575e;
+}
+
+/* Estados */
+.upgm-status {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.upgm-status-unread {
+    background: #d63638;
+    color: #fff;
+}
+
+.upgm-status-archive {
+    background: #2271b1;
+    color: #fff;
+}
+
+.upgm-status-read {
+    background: #00a32a;
+    color: #fff;
+}
+
+/* Contador */
+.upgm-count {
+    display: inline-block;
+    background: #f0f0f1;
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+/* Acciones en celdas */
+.upgm-actions-cell {
+    white-space: nowrap;
+}
+
+.upgm-actions-cell .button {
+    margin: 2px;
+}
+
+/* Sin resultados */
+.upgm-no-results {
+    text-align: center;
+    padding: 40px 20px !important;
+    color: #646970;
+    font-style: italic;
+}
+
+/* Estadísticas */
+.upgm-stats {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f6f7f7;
+    border-radius: 4px;
+}
+
+.upgm-stats p {
+    margin: 0;
+    color: #646970;
+    font-size: 13px;
+}
+
+/* Vista detallada */
+.upgm-detail {
+    max-width: 1200px;
+}
+
+.upgm-user-info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+.upgm-user-card {
+    flex: 1;
+    padding: 15px;
+    background: #f6f7f7;
+    border-radius: 4px;
+}
+
+.upgm-user-card h3 {
+    margin: 0 0 10px 0;
+    color: #1d2327;
+}
+
+.upgm-user-card p {
+    margin: 5px 0;
+    font-size: 13px;
+}
+
+.upgm-user-separator {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2271b1;
+}
+
+/* Acciones del hilo */
+.upgm-thread-actions {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+.upgm-thread-actions h3 {
+    margin: 0 0 15px 0;
+    font-size: 14px;
+}
+
+.upgm-thread-actions .button {
+    margin-right: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Contenedor de mensajes */
+.upgm-messages-container {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+.upgm-messages-container > h3 {
+    margin: 0 0 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #2271b1;
+}
+
+.upgm-no-messages {
+    text-align: center;
+    padding: 40px;
+    color: #646970;
+}
+
+/* Mensajes individuales */
+.upgm-messages {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.upgm-message {
+    border: 1px solid #dcdcde;
+    border-radius: 4px;
+    padding: 15px;
+    background: #f9f9f9;
+    transition: box-shadow 0.2s;
+}
+
+.upgm-message:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.upgm-message-user1 {
+    border-left: 4px solid #2271b1;
+}
+
+.upgm-message-user2 {
+    border-left: 4px solid #00a32a;
+}
+
+.upgm-message-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.upgm-message-from {
+    color: #1d2327;
+    font-size: 14px;
+}
+
+.upgm-message-arrow {
+    color: #646970;
+}
+
+.upgm-message-to {
+    color: #646970;
+    font-size: 13px;
+}
+
+.upgm-message-date {
+    color: #646970;
+    font-size: 12px;
+    margin-left: auto;
+}
+
+.upgm-message-status {
+    font-size: 11px;
+    padding: 2px 8px;
+}
+
+.upgm-message-content {
+    background: #fff;
+    padding: 15px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #1d2327;
+}
+
+.upgm-message-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.upgm-message-timestamp {
+    color: #646970;
+    font-size: 11px;
+    font-family: monospace;
+}
+
+.upgm-censor-btn,
+.upgm-delete-btn {
+    color: #b32d2e !important;
+    border-color: #b32d2e !important;
+}
+
+.upgm-censor-btn:hover,
+.upgm-delete-btn:hover {
+    background: #b32d2e !important;
+    color: #fff !important;
+}
+
+.upgm-censored-label {
+    color: #d63638;
+    font-size: 12px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* Info box */
+.upgm-info-box {
+    background: #fffbcc;
+    border: 1px solid #e6db55;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+.upgm-info-box h4 {
+    margin: 0 0 10px 0;
+    color: #1d2327;
+}
+
+.upgm-info-box ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.upgm-info-box li {
+    margin: 5px 0;
+    color: #50575e;
+    font-size: 13px;
+}
+
+/* Dashicons en botones */
+.button .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+/* ============================================
+   PÁGINA DE AUDITORÍA
+   ============================================ */
+
+/* Tarjetas de Estadísticas */
+.upgm-stats-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.upgm-stat-card {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: box-shadow 0.2s;
+}
+
+.upgm-stat-card:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.upgm-stat-icon {
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+    color: #2271b1;
+}
+
+.upgm-stat-content {
+    flex: 1;
+}
+
+.upgm-stat-value {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1d2327;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.upgm-stat-label {
+    font-size: 13px;
+    color: #646970;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Desglose de Acciones */
+.upgm-stats-breakdown {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.upgm-stats-breakdown h3 {
+    margin: 0 0 15px 0;
+    font-size: 14px;
+    color: #1d2327;
+}
+
+.upgm-breakdown-items {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.upgm-breakdown-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    min-width: 200px;
+    background: #f6f7f7;
+}
+
+.upgm-breakdown-label {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.upgm-breakdown-count {
+    font-size: 18px;
+    font-weight: 700;
+    color: #2271b1;
+}
+
+.upgm-breakdown-item.upgm-action-censor {
+    border-left: 4px solid #d63638;
+}
+
+.upgm-breakdown-item.upgm-action-delete {
+    border-left: 4px solid #b32d2e;
+}
+
+.upgm-breakdown-item.upgm-action-export {
+    border-left: 4px solid #00a32a;
+}
+
+/* Toolbar de Auditoría */
+.upgm-audit-toolbar {
+    margin: 15px 0;
+    padding: 10px;
+    background: #f6f7f7;
+    border: 1px solid #dcdcde;
+    border-radius: 4px;
+    display: flex;
+    gap: 10px;
+}
+
+.upgm-expand-all,
+.upgm-collapse-all {
+    font-size: 12px;
+}
+
+/* Tabla de Auditoría */
+.upgm-audit-table {
+    margin-top: 20px;
+}
+
+.upgm-audit-table .upgm-col-id {
+    width: 60px;
+}
+
+.upgm-audit-table .upgm-col-date {
+    width: 160px;
+}
+
+.upgm-audit-table .upgm-col-action {
+    width: 150px;
+}
+
+.upgm-audit-table .upgm-col-admin {
+    width: 140px;
+}
+
+.upgm-audit-table .upgm-col-users {
+    width: 200px;
+}
+
+.upgm-audit-table .upgm-col-ip {
+    width: 120px;
+}
+
+.upgm-audit-table .upgm-col-details {
+    width: 100px;
+}
+
+/* Fecha en logs */
+.upgm-date-full {
+    font-weight: 600;
+    color: #1d2327;
+}
+
+.upgm-date-relative {
+    color: #646970;
+    font-size: 12px;
+}
+
+/* Badges de Acción */
+.upgm-action-badge {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.upgm-action-badge.upgm-action-censor {
+    background: #fef7f1;
+    color: #d63638;
+    border: 1px solid #f3d6d8;
+}
+
+.upgm-action-badge.upgm-action-delete {
+    background: #fef1f1;
+    color: #b32d2e;
+    border: 1px solid #f3d6d8;
+}
+
+.upgm-action-badge.upgm-action-export {
+    background: #f0f6fc;
+    color: #00a32a;
+    border: 1px solid #c6e1c6;
+}
+
+/* Usuarios afectados */
+.upgm-affected-users {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.upgm-affected-users .upgm-separator {
+    color: #2271b1;
+    font-weight: 700;
+}
+
+.upgm-user-ids {
+    color: #646970;
+    font-size: 11px;
+}
+
+/* IP Address */
+.upgm-col-ip code {
+    background: #f6f7f7;
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-family: 'Courier New', monospace;
+}
+
+/* Botón Toggle Details */
+.upgm-toggle-details {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.upgm-toggle-details .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.upgm-toggle-details.active .dashicons-visibility:before {
+    content: "\f177"; /* dashicons-hidden */
+}
+
+/* Contenido de Detalles */
+.upgm-details-content {
+    margin-top: 10px;
+    padding: 15px;
+    background: #f9f9f9;
+    border: 1px solid #dcdcde;
+    border-radius: 4px;
+}
+
+.upgm-details-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.upgm-detail-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.upgm-detail-item strong {
+    font-size: 12px;
+    color: #646970;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.upgm-detail-item span,
+.upgm-detail-item pre {
+    font-size: 13px;
+    color: #1d2327;
+}
+
+.upgm-details-json {
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #dcdcde;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    overflow-x: auto;
+    margin: 0;
+}
+
+.upgm-user-agent {
+    font-size: 11px;
+    color: #646970;
+    word-break: break-all;
+}
+
+/* ============================================
+   IMPORT/EXPORT STYLES
+   ============================================ */
+
+.upgm-import-export-container {
+    max-width: 1200px;
+}
+
+.upgm-export-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.upgm-export-option {
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.upgm-export-option h3 {
+    margin-top: 0;
+    font-size: 16px;
+    color: #1d2327;
+}
+
+.upgm-export-option p {
+    color: #646970;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.upgm-button-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.upgm-button-group .button {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.upgm-button-group .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+
+.upgm-import-form {
+    background: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.upgm-form-field {
+    margin-bottom: 20px;
+}
+
+.upgm-form-field label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.upgm-form-field .description {
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.upgm-info-box {
+    background: #e7f3ff;
+    border-left: 4px solid #2271b1;
+    padding: 15px;
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.upgm-info-box .dashicons {
+    color: #2271b1;
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.upgm-info-box ul {
+    margin: 10px 0 0 20px;
+}
+
+.upgm-info-box li {
+    margin-bottom: 5px;
+}
+
+.upgm-warning-box {
+    background: #fff8e5;
+    border-left: 4px solid #dba617;
+    padding: 15px;
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.upgm-warning-box .dashicons {
+    color: #dba617;
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.upgm-warning-box p {
+    margin: 5px 0;
+}
+
+.upgm-documentation h3 {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #1d2327;
+}
+
+.upgm-documentation ol,
+.upgm-documentation ul {
+    margin-left: 20px;
+}
+
+.upgm-documentation li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.upgm-badge-json {
+    background: #e7f3ff;
+    color: #135e96;
+}
+
+.upgm-badge-csv {
+    background: #f0f6fc;
+    color: #0969da;
+}
+
+.upgm-badge-success {
+    background: #dff6dd;
+    color: #1a7f37;
+}
+
+.upgm-badge-error {
+    background: #ffebe9;
+    color: #cf222e;
+}
+
+/* Responsivo */
+@media screen and (max-width: 782px) {
+    .upgm-filters-row {
+        flex-direction: column;
+    }
+
+    .upgm-filter-item,
+    .upgm-filter-item select {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .upgm-user-info {
+        flex-direction: column;
+    }
+
+    .upgm-message-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .upgm-message-date {
+        margin-left: 0;
+    }
+
+    .upgm-stats-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .upgm-breakdown-items {
+        flex-direction: column;
+    }
+
+    .upgm-breakdown-item {
+        width: 100%;
+    }
+
+    .upgm-audit-table {
+        font-size: 12px;
+    }
+
+    .upgm-audit-table th,
+    .upgm-audit-table td {
+        padding: 8px 5px;
+    }
+
+    .upgm-export-options {
+        grid-template-columns: 1fr;
+    }
+
+    .upgm-button-group {
+        flex-direction: column;
+    }
+
+    .upgm-button-group .button {
+        width: 100%;
+        justify-content: center;
+    }
+}
