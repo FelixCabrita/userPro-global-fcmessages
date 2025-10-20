@@ -251,34 +251,7 @@ Las acciones se registrarán en `/wp-content/debug.log` con formato:
 ```
 [2025-01-15 10:30:45] UserPro Global Messages - censor_message by admin (ID: 1) - Data: {"user_id_1":1,"user_id_2":2,"timestamp":1234567890}
 ```
-
-## Soporte y Desarrollo
-
-### Para Desarrolladores
-
-El plugin está estructurado de forma modular:
-
-- **UPGM_File_Handler**: Maneja lectura/escritura de archivos
-- **UPGM_Message_Manager**: Lógica de negocio y filtros
-- **UPGM_Exporter**: Generación de archivos CSV/Excel
-- **UPGM_Security**: Validaciones y permisos
-- **UPGM_Admin_Page**: Renderizado de vistas
-
-### Extender Funcionalidad
-
-```php
-// Ejemplo: Hook antes de censurar
-add_action('upgm_before_censor', function($user_id_1, $user_id_2, $timestamp) {
-    // Tu código aquí
-}, 10, 3);
-
-// Ejemplo: Modificar filtros
-add_filter('upgm_conversation_filters', function($filters) {
-    // Agregar filtros personalizados
-    return $filters;
-});
-```
-
+ 
 ## Historial de Auditoría
 
 ### 📊 Sistema de Trazabilidad Completa
@@ -373,43 +346,14 @@ Este sistema de auditoría ayuda a cumplir con:
 - **SOC 2**: Control de acceso y registro de cambios
 - **ISO 27001**: Gestión de seguridad de la información
 - **Auditorías Internas**: Documentación de acciones administrativas
-
----
-
-## Changelog
-
-### 1.1.0 - 2025-01-15
-
-- ✅ **NUEVO: Sistema de Auditoría**
-  - Registro automático en base de datos
-  - Historial completo con filtros
-  - Estadísticas en tiempo real
-  - Exportación de logs a CSV
-  - Detalles expandibles por registro
-  - Captura de IP y User Agent
-- ✅ Mejoras en seguridad
-- ✅ Nuevas tablas de base de datos
-- ✅ Interfaz mejorada
-
-### 1.0.0 - 2025-01-15
-
-- ✅ Lanzamiento inicial
-- ✅ Listado de conversaciones
-- ✅ Filtros avanzados
-- ✅ Vista detallada
-- ✅ Censura de mensajes
-- ✅ Vaciado de chats
-- ✅ Exportación CSV/Excel
-- ✅ Sistema de seguridad
-- ✅ Logging de acciones
-
+ 
 ## Licencia
 
 GPL-2.0+
 
 ## Créditos
 
-Desarrollado para administración de mensajes de UserPro.
+Desarrollado por Felix Cabrita para administración de mensajes de UserPro.
 
 ---
 
