@@ -44,7 +44,7 @@ Este plugin permite a los administradores de WordPress **ver, gestionar y export
 ### Método 2: Instalación por FTP
 
 1. Descomprimir el archivo ZIP
-2. Subir la carpeta `userPro-global-fscvmessages` a `/wp-content/plugins/`
+2. Subir la carpeta `userPro-global-fcmessages` a `/wp-content/plugins/`
 3. Activar el plugin desde el panel de WordPress
 
 ### Requisitos
@@ -141,7 +141,7 @@ Columnas exportadas:
 ## Estructura de Archivos
 
 ```
-userPro-global-fscvmessages/
+userPro-global-fcmessages/
 ├── userpro-global-messages.php     # Archivo principal
 ├── README.md                        # Esta documentación
 ├── includes/
